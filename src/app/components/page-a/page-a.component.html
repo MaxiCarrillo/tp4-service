@@ -1,0 +1,23 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12 col-md-8">
+            <div class="row row-cols-1 row-cols-md-3 row-cols-sm-2 row-cols-1 g-2 mt-3">
+                <div class="col" *ngFor="let cancion of canciones">
+                    <div class="card h-100">
+                        <img src="{{cancion.img}}" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h6 class="card-text">{{cancion.artista}} <small class="text-muted ">{{cancion.fecha}}</small></h6>
+                            <h5 class="card-title">{{cancion.titulo}}</h5>
+                            <audio controls src="{{cancion.preview}}" class="w-100"></audio>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-4">
+            <div class="container m-auto">
+                <img src="../../../assets/imagenes/anuncio.jpg" class="rounded mx-auto d-block mt-3 w-75">
+            </div>
+        </div>
+    </div>
+</div>

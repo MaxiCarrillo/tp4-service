@@ -1,0 +1,69 @@
+<h1 class="m-2 text-center">Los signos del Zodiaco</h1>
+<div class="row w-75 m-auto mt-4">
+    <div class="col-12 col-sm-6 col-md-4">
+        <img src="../../../assets/imagenes/aries.jpg" width="70" height="70">
+        <h5 class="d-inline-block">Aries</h5>
+    </div>
+    <div class="col-12 col-sm-6 col-md-4">
+        <img src="../../../assets/imagenes/leo.jpg" width="70" height="70">
+        <h5 class="d-inline-block">Leo</h5>
+    </div>
+    <div class="col-12 col-sm-6 col-md-4">
+        <img src="../../../assets/imagenes/sagitario.jpg" width="70" height="70">
+        <h5 class="d-inline-block">Sagitario</h5>
+    </div>
+    <div class="col-12 col-sm-6 col-md-4">
+        <img src="../../../assets/imagenes/tauro.jpg" width="70" height="70">
+        <h5 class="d-inline-block">Tauro</h5>
+    </div>
+    <div class="col-12 col-sm-6 col-md-4">
+        <img src="../../../assets/imagenes/virgo.jpg" width="70" height="70">
+        <h5 class="d-inline-block">Virgo</h5>
+    </div>
+    <div class="col-12 col-sm-6 col-md-4">
+        <img src="../../../assets/imagenes/capricornio.jpg" width="70" height="70">
+        <h5 class="d-inline-block">Capricornio</h5>
+    </div>
+    <div class="col-12 col-sm-6 col-md-4">
+        <img src="../../../assets/imagenes/geminis.jpg" width="70" height="70">
+        <h5 class="d-inline-block">Geminis</h5>
+    </div>
+    <div class="col-12 col-sm-6 col-md-4">
+        <img src="../../../assets/imagenes/libra.jpg" width="70" height="70">
+        <h5 class="d-inline-block">Libra</h5>
+    </div>
+    <div class="col-12 col-sm-6 col-md-4">
+        <img src="../../../assets/imagenes/aquario.jpg" width="70" height="70">
+        <h5 class="d-inline-block">Aquario</h5>
+    </div>
+    <div class="col-12 col-sm-6 col-md-4">
+        <img src="../../../assets/imagenes/cancer.jpg" width="70" height="70">
+        <h5 class="d-inline">Cancer</h5>
+    </div>
+    <div class="col-12 col-sm-6 col-md-4">
+        <img src="../../../assets/imagenes/escorpio.jpg" width="70" height="70">
+        <h5 class="d-inline-block">Escorpio</h5>
+    </div>
+    <div class="col-12 col-sm-6 col-md-4">
+        <img src="../../../assets/imagenes/piscis.jpg" width="70" height="70">
+        <h5 class="d-inline-block">Piscis</h5>
+    </div>
+</div>
+<div class="row mt-5 container m-auto">
+    <div class="col-12" *ngFor="let signo of signos">
+        <h3 class="bg-dark text-white text-center rounded-5">{{signo.signo | titlecase }} ({{signo.fecha}})</h3>
+        <div class="row">
+            <div class="col-12 col-md-2 text-center">
+                <img src="../../../assets/imagenes/{{signo.img}}" width="100" height="100">
+            </div>
+            <div class="col-12 col-md-10">
+                <h6>Descripcion:</h6>
+                <p>{{signo.descripcion}}</p>
+                <h6>Compatibilidad:</h6>
+                <p>{{signo.compatibilidad}}</p>
+                <h6>Debilidad:</h6>
+                <p>{{signo.debilidad}}</p>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,33 @@
+<nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark ">
+    <div class="container-fluid">
+        <a class="navbar-brand" [routerLink]="'page-a'">Max</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" [routerLink]="'page-a'"><i class="bi bi-boombox-fill me-1"></i>Portal de Temas Musicales</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" [routerLink]="'page-b'"><i class="bi bi-wallet me-1"></i>Cotización de divisas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" [routerLink]="'page-c'"><i class="bi bi-calendar-heart-fill me-1"></i>Horoscopo</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" [routerLink]="'page-d'"><i class="bi bi-youtube me-1"></i>Youtube</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" [routerLink]="'page1'" target="_blank">Ejercicio 1</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
